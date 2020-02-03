@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FutApp</string>
+    <string name="title_home">Inicio</string>
+    <string name="title_dashboard">Clasificación</string>
+    <string name="title_notifications">Opciones</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

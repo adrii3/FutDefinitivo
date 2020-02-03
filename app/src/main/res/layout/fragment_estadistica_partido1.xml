@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.EstadisticaPartido1Fragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/activity_vertical_margin">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Osasuna           Estadísticas de equipo           Levante"
+                    android:textAlignment="center"
+                    android:textSize="17dp"
+                    android:textStyle="italic"
+                    android:textColor="@color/overlay_dark_90"/>
+
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="15                         Tiros                         6"
+                    android:textAlignment="center"
+                    android:textSize="17dp"
+                    android:textStyle="italic"
+                    android:textColor="@color/blue_500"/>
+
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="15                         Tiros                         6"
+                    android:textAlignment="center"
+                    android:textSize="17dp"
+                    android:textStyle="italic"
+                    android:textColor="@color/blue_500"/>
+
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="15                  Tiros a puerta                  6"
+                    android:textAlignment="center"
+                    android:textSize="17dp"
+                    android:textStyle="italic"
+                    android:textColor="@color/blue_500"/>
+
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="56%                   Posesión                       44%"
+                    android:textAlignment="center"
+                    android:textSize="17dp"
+                    android:textStyle="italic"
+                    android:textColor="@color/blue_500"/>
+
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="75%             Acierto en los pases             64%"
+                    android:textAlignment="center"
+                    android:textSize="17dp"
+                    android:textStyle="italic"
+                    android:textColor="@color/blue_500"/>
+
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="18                         Faltas                         11"
+                    android:textAlignment="center"
+                    android:textSize="17dp"
+                    android:textStyle="italic"
+                    android:textColor="@color/blue_500"/>
+
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3                  Tarjetas amarillas                  3"
+                    android:textAlignment="center"
+                    android:textSize="17dp"
+                    android:textStyle="italic"
+                    android:textColor="@color/blue_500"/>
+
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0                      Tarjetas rojas                      0"
+                    android:textAlignment="center"
+                    android:textSize="17dp"
+                    android:textStyle="italic"
+                    android:textColor="@color/blue_500"/>
+
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="15                    Fueras de juego                    6"
+                    android:textAlignment="center"
+                    android:textSize="17dp"
+                    android:textStyle="italic"
+                    android:textColor="@color/blue_500"/>
+
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="5                  Saques de esquina                  5"
+                    android:textAlignment="center"
+                    android:textSize="17dp"
+                    android:textStyle="italic"
+                    android:textColor="@color/blue_500"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
