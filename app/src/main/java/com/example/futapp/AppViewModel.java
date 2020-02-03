@@ -51,7 +51,7 @@ public class AppViewModel extends AndroidViewModel {
         estadoRegistroMLD.postValue(EstadoRegistro.INICIO_REGISTRO);
     }
 
-    public void crearCuentaEIniciarSesion(final String usuario, final String contraseña){
+    public void crearCuentaEIniciarSesion(final String nombre, final String usuario, final String email, final String contraseña){
         AsyncTask.execute(new Runnable() {
             @Override
             public void run() {
