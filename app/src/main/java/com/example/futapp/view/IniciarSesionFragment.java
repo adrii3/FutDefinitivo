@@ -46,7 +46,11 @@ public class IniciarSesionFragment extends Fragment {
     public void onViewCreated(@NonNull final View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         final AppViewModel appViewModel = ViewModelProviders.of(requireActivity()).get(AppViewModel.class);
+
         iniciarSesionBoton = view.findViewById(R.id.boton_iniciar_Sesion);
+        usuarioEditText = view.findViewById(R.id.edit_Text_usuario);
+        contrasenyaEditText = view.findViewById(R.id.edit_Text_contraseña);
+
 
         iniciarSesionBoton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,8 +58,9 @@ public class IniciarSesionFragment extends Fragment {
                 iniciarSesionBoton.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        appViewModel.iniciarSesion(usuarioEditText.getText().toString(),contrasenyaEditText.getText().toString());
+                        Navigation.findNavController(view).navigate(R.id.resultadosFragment);
 
+                        appViewModel.iniciarSesion(usuarioEditText.getText().toString(),contrasenyaEditText.getText().toString());
 
                     }
                 });

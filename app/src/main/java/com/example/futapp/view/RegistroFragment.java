@@ -55,7 +55,7 @@ public class RegistroFragment extends AppFragment {
         Button registrarButton = view.findViewById(R.id.boton_Registrarse);
 
 
-        appViewModel.inicarRegistro();
+        appViewModel.iniciarRegistro();
 
 
         registrarButton.setOnClickListener(new View.OnClickListener() {

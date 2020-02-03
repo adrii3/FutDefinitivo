@@ -47,19 +47,19 @@ public class AppViewModel extends AndroidViewModel {
         estadoRegistroMLD.setValue(EstadoRegistro.INICIO_REGISTRO);
     }
 
-    public void inicarRegistro(){
+    public void iniciarRegistro(){
         estadoRegistroMLD.postValue(EstadoRegistro.INICIO_REGISTRO);
     }
 
-    public void crearCuentaEIniciarSesion(final String nombre, final String usuario, final String email, final String contraseña){
+    public void crearCuentaEIniciarSesion(final String nombre, final String usuario, final String email, final String contrasenya){
         AsyncTask.execute(new Runnable() {
             @Override
             public void run() {
                 Usuario usuario1 = appDAO.comprobarUsuarioDisponible(usuario);
                 if(usuario1==null){
-                    appDAO.insertarUsuario(new Usuario(usuario, contraseña));
+                    appDAO.insertarUsuario(new Usuario(usuario, contrasenya));
                     estadoRegistroMLD.postValue(EstadoRegistro.REGISTRO_COMPLETO);
-                    iniciarSesion(usuario, contraseña);
+                    iniciarSesion(usuario, contrasenya);
                 }else{
                     estadoRegistroMLD.postValue(EstadoRegistro.NOMBRE_NO_DISPONIBLE);
                 }
@@ -67,7 +67,7 @@ public class AppViewModel extends AndroidViewModel {
         });
     }
 
-    public void iniciarSesion(final String usuario, final String contraseña){
+    public void iniciarSesion(final String usuario, final String contrasenya){
         AsyncTask.execute(new Runnable() {
             @Override
             public void run() {

@@ -6,7 +6,7 @@ import androidx.room.PrimaryKey;
 @Entity
 public class Resultado {
     @PrimaryKey(autoGenerate = true)
-    int id;
+    public int id;
 
     public String equipo1;
     public String equipo2;
