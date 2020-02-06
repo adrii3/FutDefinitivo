@@ -1,4 +1,4 @@
-package com.example.futapp.view;
+package com.example.futapp;
 
 
 import android.os.Bundle;
@@ -9,16 +9,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.futapp.R;
-
 
 /**
  * A simple {@link Fragment} subclass.
  */
-public class EstadisticaPartido3Fragment extends Fragment {
+public class BienvenidaFragment extends Fragment {
 
 
-    public EstadisticaPartido3Fragment() {
+    public BienvenidaFragment() {
         // Required empty public constructor
     }
 
@@ -27,7 +25,7 @@ public class EstadisticaPartido3Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_estadistica_partido3, container, false);
+        return inflater.inflate(R.layout.fragment_bienvenida, container, false);
     }
 
 }

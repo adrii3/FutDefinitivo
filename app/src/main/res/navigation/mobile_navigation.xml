@@ -25,28 +25,13 @@
         android:label="fragment_estadistica_partido1"
         tools:layout="@layout/fragment_estadistica_partido1" />
     <fragment
-        android:id="@+id/estadisticaPartido2Fragment"
-        android:name="com.example.futapp.view.EstadisticaPartido2Fragment"
-        android:label="fragment_estadistica_partido2"
-        tools:layout="@layout/fragment_estadistica_partido2" />
-    <fragment
-        android:id="@+id/estadisticaPartido3Fragment"
-        android:name="com.example.futapp.view.EstadisticaPartido3Fragment"
-        android:label="fragment_estadistica_partido3"
-        tools:layout="@layout/fragment_estadistica_partido3" />
-    <fragment
-        android:id="@+id/estadisticaPartido4Fragment"
-        android:name="com.example.futapp.view.EstadisticaPartido4Fragment"
-        android:label="fragment_estadistica_partido4"
-        tools:layout="@layout/fragment_estadistica_partido4" />
-    <fragment
-        android:id="@+id/estadisticaPartido5Fragment"
-        android:name="com.example.futapp.view.EstadisticaPartido5Fragment"
-        android:label="fragment_estadistica_partido5"
-        tools:layout="@layout/fragment_estadistica_partido5" />
-    <fragment
         android:id="@+id/clasificacionFragment"
         android:name="com.example.futapp.view.ClasificacionFragment"
         android:label="fragment_clasificacion"
         tools:layout="@layout/fragment_clasificacion" />
+    <fragment
+        android:id="@+id/bienvenidaFragment"
+        android:name="com.example.futapp.BienvenidaFragment"
+        android:label="fragment_bienvenida"
+        tools:layout="@layout/fragment_bienvenida" />
 </navigation>

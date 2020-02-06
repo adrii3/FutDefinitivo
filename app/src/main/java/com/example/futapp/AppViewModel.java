@@ -2,6 +2,7 @@ package com.example.futapp;
 
 import android.app.Application;
 import android.os.AsyncTask;
+import android.util.Log;
 
 import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
@@ -68,14 +69,20 @@ public class AppViewModel extends AndroidViewModel {
     }
 
     public void iniciarSesion(final String usuario, final String contrasenya){
+        Log.e("ABCD", "inciando asynctask");
         AsyncTask.execute(new Runnable() {
             @Override
             public void run() {
+                Log.e("ABCD", "comprobando suaurio");
+                Log.e("ABCD", "");
                 Usuario usuario1 = appDAO.comprobarUsuarioDisponible(usuario);
+                Log.e("ABCD", "usuario comprobado");
                 if(usuario1!=null){
+                    Log.e("ABCD", "usuario es distinto de null");
                     usuarioLogeado = usuario1;
                     estadoAutenticacionMLD.postValue(EstadoAutenticacion.AUTENTICADO);
                 }else{
+                    Log.e("ABCD", "usuario es null");
                     estadoAutenticacionMLD.postValue(EstadoAutenticacion.AUTENTICACION_INVALIDA);
                 }
             }

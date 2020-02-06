@@ -11,6 +11,7 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 import androidx.navigation.Navigation;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -52,18 +53,12 @@ public class IniciarSesionFragment extends Fragment {
         contrasenyaEditText = view.findViewById(R.id.edit_Text_contraseña);
 
 
+        Log.e("ABCD", "poniendo el listener");
         iniciarSesionBoton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                iniciarSesionBoton.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Navigation.findNavController(view).navigate(R.id.resultadosFragment);
-
-                        appViewModel.iniciarSesion(usuarioEditText.getText().toString(),contrasenyaEditText.getText().toString());
-
-                    }
-                });
+                Log.e("ABCD", "inciando sesion en el viewmodel");
+                appViewModel.iniciarSesion(usuarioEditText.getText().toString(),contrasenyaEditText.getText().toString());
             }
         });
 
@@ -91,16 +86,5 @@ public class IniciarSesionFragment extends Fragment {
 
             }
         });
-
-        requireActivity().getOnBackPressedDispatcher().addCallback(getViewLifecycleOwner(),
-                new OnBackPressedCallback(true) {
-                    @Override
-                    public void handleOnBackPressed() {
-                        Navigation.findNavController(view).popBackStack(R.id.resultadosFragment, false);
-                    }
-                });
-
-
-
     }
 }
