@@ -41,7 +41,7 @@ public class BienvenidaFragment extends Fragment {
     public void onViewCreated(@NonNull final View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         botonIniciarSesion = view.findViewById(R.id.boton_bienvenida_iniciar_sesion);
-        botonRegistrarse = view.findViewById(R.id.boton_bienvenida_registrarse);
+        botonRegistrarse = view.findViewById(R.id.boton_bienvenida_registro);
 
 
         botonIniciarSesion.setOnClickListener( new View.OnClickListener(){
