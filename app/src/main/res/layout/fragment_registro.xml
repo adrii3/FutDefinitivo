@@ -142,7 +142,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/spacing_large"
-                        android:background="@drawable/btn_rounded_accent"
+                        android:background="@color/blue_A700"
                         android:text="REGISTER"
                         android:textColor="@android:color/white" />
 

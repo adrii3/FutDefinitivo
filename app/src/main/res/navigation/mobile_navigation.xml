@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@id/iniciarSesionFragment">
+    app:startDestination="@id/bienvenidaFragment">
     <fragment
         android:id="@+id/iniciarSesionFragment"
         android:name="com.example.futapp.view.IniciarSesionFragment"
@@ -31,7 +31,7 @@
         tools:layout="@layout/fragment_clasificacion" />
     <fragment
         android:id="@+id/bienvenidaFragment"
-        android:name="com.example.futapp.BienvenidaFragment"
+        android:name="com.example.futapp.view.BienvenidaFragment"
         android:label="fragment_bienvenida"
         tools:layout="@layout/fragment_bienvenida" />
 </navigation>

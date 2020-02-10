@@ -105,7 +105,7 @@
                 android:layout_height="55dp"
                 android:layout_marginLeft="-4dp"
                 android:layout_marginRight="-4dp"
-                android:background="@drawable/btn_purple_a400"
+                android:background="@color/blue_A700"
                 android:text="Iniciar Sesión"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
@@ -127,7 +127,7 @@
                     android:layout_height="wrap_content"
                     android:text="Usuario nuevo? "
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
-                    android:textColor="@color/blue_grey_300" />
+                    android:textColor="@color/blue_A700" />
 
                 <Button
                     android:id="@+id/boton_registro"
@@ -135,7 +135,7 @@
                     android:layout_height="wrap_content"
                     android:text="Registrarse"
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
-                    android:textColor="@color/purple_A400"
+                    android:textColor="@color/blue_A700"
                     android:textStyle="bold" />
 
             </LinearLayout>
